@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+             font-family: Arial;
+                
+        }
+
+
+        .sub-button{
+            border: none;
+            background-color: black;
+            border-radius: 50px;
+            color: white;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .Calculator-button{
+            border: none;
+            border-radius: 50px;
+            padding-left: 15px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+        .is-subscribed{
+            background-color: rgb(240, 240, 240);
+            color: black;
+        }
+
+        .cost-order{
+            font-size: 15px;
+            /* padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 10px; */
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   <p> YouTube Subscribe Button</p>
+
+    <button onclick="
+      Subscribe();
+    "class="js-subscribe-button sub-button">Subscribe</button>
+
+    <!-- <p>Rock Paper Scissors</p>
+
+    <p>Click here</p> -->
+
+    <p>Amazon Shipping Calculator</p>
+
+    <input  placeholder="cost of order" class="js-cost-input  cost-order"  onkeydown="
+    handleCostKeydown(event);">
+
+    <button onclick="
+      calculateTotal();
+      " class="Calculator-button">Calculate</button>
+    <p class="js-total-cost"></p>
+
+
+
+    <script src="calculater.js"></script>
+</body>
+</html>
